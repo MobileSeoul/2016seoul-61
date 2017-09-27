@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--옵션 메뉴 레이아웃.-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/show_Scroll"
+        >
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <com.example.lee.playinseoul.model.MediumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="내 일기 보기"
+                    android:textSize="23dp"
+                    android:id="@+id/show_Big_title"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/show_layout_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/show_content_share"
+                        android:background="@drawable/icon_share" />
+
+                    <ImageButton
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/show_content_edit"
+                        android:background="@drawable/icon_edit" />
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/show_content_delete"
+                        android:background="@drawable/icon_delete" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/detail_under_bar"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:id="@+id/show_title"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_none"
+                android:id="@+id/show_image"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1EAF88E1">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/show_rating"
+                    android:progressDrawable="@drawable/selector_rating"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:rating="3.0"
+                    />
+
+                <com.example.lee.playinseoul.model.LightTextView
+                    android:id="@+id/show_text_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="20dp"
+                    android:text="평점 : "
+                    android:textSize="15dp"/>
+            </RelativeLayout>
+
+            <com.example.lee.playinseoul.model.LightTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:textSize="15dp"
+            android:id="@+id/show_content" />
+            </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:id="@+id/show_findLocationBtn"
+        android:visibility="gone"
+        android:text="여행 가기"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/selector_button_purple"/>
+</LinearLayout>

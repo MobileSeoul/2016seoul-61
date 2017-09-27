@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tour_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/icon_circle_app"/>
+
+    <LinearLayout
+        android:id="@+id/tour_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.example.lee.playinseoul.model.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여행을 시작하시겠습니까?"
+            android:textSize="26dp"
+            android:textColor="#ffffff"
+            android:id="@+id/tour_text_title"
+            android:textAlignment="center"
+            />
+        <com.example.lee.playinseoul.model.LightTextView
+            android:id="@+id/tour_explain"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목적지에 도착하여 자신의 발자취를 남겨보세요!!\n 목적지 근방에 도착하면 알림을 띄워줍니다."
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+    <com.example.lee.playinseoul.model.MediumTextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:id="@+id/tour_button_start"
+        android:layout_alignParentBottom="true"
+        android:text="여행 시작"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/selector_button_white"/>
+
+</RelativeLayout>

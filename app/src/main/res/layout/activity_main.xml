@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 배경화면 -->
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/main_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line_click"
+                android:scaleType="fitXY"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:id="@+id/main_button_condition"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_button_condition"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line_click"
+                android:scaleType="fitXY"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:id="@+id/main_button_random"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_button_random"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line_click"
+                android:scaleType="fitXY"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:id="@+id/main_button_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_button_stamp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line_click"
+                android:scaleType="fitXY"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:id="@+id/main_button_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_button_recommend"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_line_click"
+                android:scaleType="fitXY"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:id="@+id/main_button_my_inform"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_button_my"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

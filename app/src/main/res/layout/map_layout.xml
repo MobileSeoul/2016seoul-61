@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/map_view"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <!-- 글쓰기 버튼 -->
+        <android.support.design.widget.FloatingActionButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/addPinfabBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="130dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            app:backgroundTint="#7667B2"
+            android:src="@drawable/icon_write"/>
+
+        <!-- 방문지 목록 버튼 -->
+        <android.support.design.widget.FloatingActionButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/openDrawerfabBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            app:backgroundTint="#9178C1"
+            android:src="@drawable/icon_visited_list"/>
+
+        <!-- + / X 버튼 -->
+        <android.support.design.widget.FloatingActionButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/floatingBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            app:backgroundTint="#B089E3"
+            android:src="@drawable/icon_plus"/>
+    </FrameLayout>
+
+    <include layout="@layout/map_drawer_menu" />
+
+</android.support.v4.widget.DrawerLayout>

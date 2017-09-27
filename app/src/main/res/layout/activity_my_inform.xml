@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_inform_background"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_button_purple"
+        android:text="로그아웃"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/my_inform_logout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            <ImageView
+                android:id="@+id/my_inform_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/my_inform_lock"/>
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_inform_image"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/my_inform_userid" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/my_inform_underline"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="닉네임" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/shape_button_purple"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:id="@+id/my_inform_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="10dp"
+                android:text="* 닉네임을 변경하실 때 입력합니다."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="기존 비밀번호" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/shape_button_purple"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:hint="현재 비밀번호 입력"
+                android:id="@+id/my_inform_now_password" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="10dp"
+                android:text="* 필수"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="신규 비밀번호" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/shape_button_purple"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:hint="비밀번호 변경시 입력"
+                android:id="@+id/my_inform_password1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="10dp"
+                android:text="* 8~20자리"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lee.playinseoul.model.LightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="비밀번호 확인" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/shape_button_purple"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:hint="신규 비밀번호 재입력"
+                android:id="@+id/my_inform_password2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.example.lee.playinseoul.model.MediumTextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:text="회원 정보 수정"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:background="@drawable/selector_button_purple"
+            android:id="@+id/my_inform_edit" />
+
+        <com.example.lee.playinseoul.model.MediumTextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:text="회원 탈퇴"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:background="@drawable/selector_button_purple"
+            android:id="@+id/my_inform_del" />
+    </LinearLayout>
+
+</RelativeLayout>
